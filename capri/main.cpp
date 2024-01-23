@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -12,22 +13,12 @@ int main() {
     for (i1=1; i1<=N; i1++)
     {
         cin >> x;
-
-        old_x=x;
-        x_temp = x;
-
-        n=0;
         
-        while (x_temp)
-        {
-              n++;
-              x_temp /=10;
-         }
+        n =  to_string(x).length();
+        del1 = pow(10, n);
+        old_x=x;
 
         x=x*x;
-
-        del1=1;
-        for(i=1;i<=n; i++) del1 *=10;
 
         Kap = x / del1;
         Rekar = x % del1;
