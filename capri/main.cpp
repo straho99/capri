@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    long long x, Kap, Rekar, old_x, x_temp, n, i, del1;
+    long long x, Kap, Rekar, old_x, n, del1;
 
     int br=0, N, i1;
 
